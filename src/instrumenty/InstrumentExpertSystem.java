@@ -1,7 +1,5 @@
 package instrumenty;
 import javax.swing.*; 
-import javax.swing.border.*; 
-import javax.swing.table.*;
 import java.awt.*; 
 import java.awt.event.*; 
 
@@ -54,7 +52,7 @@ class InstrumentExpertSystem implements ActionListener
       /* Give the frame an initial size. */
       /*=================================*/
      
-      jfrm.setSize(350,200);  
+      jfrm.setSize(480,300);  
   
       /*=============================================================*/
       /* Terminate the program when the user closes the application. */
