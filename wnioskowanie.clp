@@ -325,15 +325,15 @@
   
   )))
   
- (defrule czy-grzebiesz-w-trzcinie
+ (defrule czy-przeciwko-stroikom
   ?f0 <- (czekaj-na-input)
   ?f1 <- (send-to-java)
   (aCzyLubiszWyzwania oZycieJestZaKrotkie)
   =>
   (retract ?f0 ?f1)
   (assert (send-to-java 
-  			(tresc pCzyGrzebieszWTrzcinie)
-  			(asercja aCzyGrzebieszWTrzcinie)
+  			(tresc pCzyPrzeciwkoStroikom)
+  			(asercja aCzyPrzeciwkoStroikom)
   			(ile 2)
   			(odp1 oZaDuzoRoboty)
   			(odp2 oLubieFrustrujaceZadania)
@@ -345,7 +345,7 @@
    (defrule czy-chcesz-w-zespole-z-lat-80
   ?f0 <- (czekaj-na-input)
   ?f1 <- (send-to-java)
-  (aCzyGrzebieszWTrzcinie oLubieFrustrujaceZadania)
+  (aCzyPrzeciwkoStroikom oLubieFrustrujaceZadania)
   =>
   (retract ?f0 ?f1)
   (assert (send-to-java 
@@ -362,7 +362,7 @@
      (defrule glosno-czy-elegancko
   ?f0 <- (czekaj-na-input)
   ?f1 <- (send-to-java)
-  (aCzyGrzebieszWTrzcinie oZaDuzoRoboty)
+  (aCzyPrzeciwkoStroikom oZaDuzoRoboty)
   =>
   (retract ?f0 ?f1)
   (assert (send-to-java 
